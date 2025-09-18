@@ -1,108 +1,196 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "XMTP developer docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4F46E5",
+    "light": "#A5B4FC",
+    "dark": "#4F46E5"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "x-mark-blue-lightmode.png",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Build agents",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "agents/get-started/intro",
+              "agents/get-started/build-an-agent",
+              "agents/get-started/faq"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Core messaging",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "agents/core-messaging/create-a-client",
+              "agents/core-messaging/create-a-signer",
+              "agents/core-messaging/agent-installations",
+              "agents/core-messaging/create-conversations",
+              "agents/core-messaging/send-messages",
+              "agents/core-messaging/stream",
+              "agents/core-messaging/group-metadata",
+              "agents/core-messaging/group-permissions",
+              "agents/core-messaging/rate-limits"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Content types",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "agents/content-types/content-types",
+              "agents/content-types/attachments",
+              "agents/content-types/reactions",
+              "agents/content-types/replies",
+              "agents/content-types/transactions",
+              "agents/content-types/transaction-refs"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Deployment and security",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "agents/deploy-agent",
+              "agents/agent-security",
+              "agents/debug-agents"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Build chat apps",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Introduction",
             "pages": [
-              "api-reference/introduction"
+              "chat-apps/intro/get-started",
+              "chat-apps/intro/why-xmtp",
+              "chat-apps/intro/build-with-llms",
+              "chat-apps/intro/faq",
+              "chat-apps/intro/dev-support"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Core messaging",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "chat-apps/core-messaging/create-a-client",
+              "chat-apps/core-messaging/create-a-signer",
+              "chat-apps/core-messaging/manage-inboxes",
+              "chat-apps/core-messaging/create-conversations",
+              "chat-apps/core-messaging/send-messages",
+              "chat-apps/core-messaging/group-metadata",
+              "chat-apps/core-messaging/group-permissions",
+              "chat-apps/core-messaging/support-group-invite-links",
+              "chat-apps/core-messaging/rate-limits"
+            ]
+          },
+          {
+            "group": "Content types",
+            "pages": [
+              "chat-apps/content-types/content-types",
+              "chat-apps/content-types/attachments",
+              "chat-apps/content-types/reactions",
+              "chat-apps/content-types/replies",
+              "chat-apps/content-types/read-receipts",
+              "chat-apps/content-types/transactions",
+              "chat-apps/content-types/transaction-refs",
+              "chat-apps/content-types/custom",
+              "chat-apps/content-types/fallback"
+            ]
+          },
+          {
+            "group": "User consent",
+            "pages": [
+              "chat-apps/user-consent/user-consent",
+              "chat-apps/user-consent/support-user-consent"
+            ]
+          },
+          {
+            "group": "List, stream, and sync",
+            "pages": [
+              "chat-apps/list-stream-sync/list",
+              "chat-apps/list-stream-sync/stream",
+              "chat-apps/list-stream-sync/sync-and-syncall",
+              "chat-apps/list-stream-sync/sync-preferences",
+              "chat-apps/list-stream-sync/history-sync"
+            ]
+          },
+          {
+            "group": "Push notifications",
+            "pages": [
+              "chat-apps/push-notifs/understand-push-notifs",
+              "chat-apps/push-notifs/push-notifs",
+              "chat-apps/push-notifs/pn-server",
+              "chat-apps/push-notifs/ios-pn",
+              "chat-apps/push-notifs/android-pn"
+            ]
+          },
+          {
+            "group": "SDKs",
+            "pages": [
+              "chat-apps/sdks/node",
+              "chat-apps/sdks/browser",
+              "chat-apps/sdks/react-native",
+              "chat-apps/sdks/ios",
+              "chat-apps/sdks/android"
+            ]
+          },
+          {
+            "group": "Additional guides",
+            "pages": [
+              "chat-apps/use-signatures",
+              "chat-apps/debug-your-app"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Network",
+        "groups": [
+          {
+            "group": "Network infrastructure",
+            "pages": [
+              "network/network-nodes",
+              "network/run-a-node"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Protocol",
+        "groups": [
+          {
+            "group": "Protocol fundamentals",
+            "pages": [
+              "protocol/overview",
+              "protocol/identity",
+              "protocol/security",
+              "protocol/signatures"
+            ]
+          },
+          {
+            "group": "Technical specifications",
+            "pages": [
+              "protocol/envelope-types",
+              "protocol/epochs",
+              "protocol/cursors",
+              "protocol/intents",
+              "protocol/topics",
+              "protocol/xips"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logomark-light-purple.png",
+    "dark": "/logo/logomark-dark-purple.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Try XMTP.chat",
+      "href": "https://xmtp.chat/welcome"
     }
   },
   "contextual": {
@@ -119,8 +207,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
+      "x": "https://x.com/_xmtp",
+      "github": "https://github.com/xmtp",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
